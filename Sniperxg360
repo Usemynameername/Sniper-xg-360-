@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sniper XG 360</title>
+</head>
+<body>
+    <script src="node_modules/phaser/dist/phaser.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+{
+  "name": "sniper-xg-360",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "phaser": "^3.55.2",
+    "http-server": "^14.0.0"
+  }
+}git clone https://github.com/your-username/sniper-xg-360.git
+cd sniper-xg-360const config = {
+    type: Phaser.AUTO,
+    width: 800,
+    height: 600,
+    physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 0 },
+            debug: false
+        }
+    },
+    scene: {
+        preload: preload,
+        create: create,
+        update: update
+    }
+};
+
+const game = new Phaser.Game(config);
+
+function preload() {
+    // Load assets here
+}
+
+function create() {
+    // Set up game elements here
+}
+
+function update() {
+    // Game loop logic here
+}git commit -m "Initial commit with basic Phaser setup"
